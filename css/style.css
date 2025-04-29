@@ -25,7 +25,10 @@ img {
 .hero {
   position: relative;
   overflow: hidden;
-  min-height: 100vh; /* на весь экран */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 46px;
 }
 
 .hero-image-wrapper {
@@ -43,46 +46,46 @@ img {
   object-fit: cover;
 }
 
-.hero-heading {
-  position: relative;
-  z-index: 2;
-  padding: 16px;
-  max-width: 1440px;
-  margin: 0 auto 2rem;
-  text-align: left;
-}
-
-.hero-heading h1 {
-  font-size: 7rem;
-  width: 100%;
-}
-
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 16px;
-  max-width: 700px;
+  max-width: 1100px;
   text-align: left;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Важное! Ставим текст сверху вниз */
+  align-items: flex-start; /* Выравниваем по левому краю */
 }
 
-p {
+.hero-content h1 {
+  font-size: 6rem;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+  line-height: 110%;
+  text-align: left;
+  max-width: 1000px;
+  letter-spacing: -0.5px;
+}
+
+.hero-content p {
   font-size: 1.5rem;
+  color: #FFFFFF;
   margin-bottom: 2rem;
   line-height: 1.6;
+  max-width: 700px;
 }
 
 .button {
   display: inline-block;
-  margin-top: 2rem;
-  padding: 1rem 2rem;
-  background-color: #211f1f;
+  margin-top: 1.6rem;
+  padding: 1rem 4rem;
+  background-color: #2B1F3C;
   color: #FEFDF9;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 50px;
   font-weight: 600;
   font-size: 1.25rem;
 }
+
 
 /* NAVIGATION */
 .nav {
